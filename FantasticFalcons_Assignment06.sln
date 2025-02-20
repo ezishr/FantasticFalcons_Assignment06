@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FantasticFalcons_Assignment06", "FantasticFalcons_Assignment06\FantasticFalcons_Assignment06.pyproj", "{8455E78D-A790-41CB-BC1E-DB169096CC95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8455E78D-A790-41CB-BC1E-DB169096CC95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8455E78D-A790-41CB-BC1E-DB169096CC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40AEF6D5-5CA6-44F6-9262-DBB42C5A30C6}
+	EndGlobalSection
+EndGlobal
