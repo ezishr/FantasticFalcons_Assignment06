@@ -7,9 +7,7 @@
 # Course #/Section: 001
 # Semester/Year: Spring 2025
 # Brief Description of the assignment:  We create a Python project using classes for an object "Book" that holds meaning to us.
-
 # Brief Description of what this module does: We use classes to model an object in the real world while adhering to the Visual Studio 2022 architecture taught in class.
-
 # Anything else that's relevant: N/A
 
 
@@ -19,12 +17,11 @@ class BookSale:
         Initialize the BookSale class with a reference to a Book object.
         """
         self.book = book
-        self._sold = False  # We set the default as not sold
+        self._sold = False
 
     def __str__(self):
         status = "Sold" if self._sold else "Available"
         return "Sold Status of '" + self.book.title + "': " + status
-
 
     def sold(self):
         """

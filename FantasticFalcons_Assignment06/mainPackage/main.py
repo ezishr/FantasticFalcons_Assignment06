@@ -7,9 +7,7 @@
 # Course #/Section: 001
 # Semester/Year: Spring 2025
 # Brief Description of the assignment:  We create a Python project using classes for an object "Book" that holds meaning to us.
-
 # Brief Description of what this module does: We use classes to model an object in the real world while adhering to the Visual Studio 2022 architecture taught in class.
-
 # Anything else that's relevant: N/A
 
 from re import M
@@ -20,12 +18,12 @@ from BookColors.BookColors import *
 
 if __name__ == "__main__":
     # Test with Book class
+    print("Testing the Book Class\n")
     my_book = Book(title = "The Great Gatsby", author = "F. Scott Fitzgerald", total_pages = 180)
     print(f"Print __str__: {my_book.__str__()}")
-    print(f"Print __repr__: {my_book.__repr__()}\n")
+    print(f"Print __repr__: {my_book.__repr__()}")
     my_book.current_page_setter(page = 20)
-    print(f"Print current page: {my_book.current_page_getter()}")
-
+    print(f"Print current page: {my_book.current_page_getter()}\n")
 
 
     # Testing the BookSale Class Begins Here
@@ -42,15 +40,16 @@ if __name__ == "__main__":
 
     # Setting Sold Status with an invalid value
     print("Trying to set Sold Status to an Invalid Value in the Following Line:")
-    book_sale.set_sold("yes") # This prints an error message
+    book_sale.set_sold("Yes") # This prints an error message
 
     # Mark the book as sold
     book_sale.mark_as_sold()   
 
     # Mark the book as available
     book_sale.mark_as_available()  
-
+    print("\n")
     # Testing the BookSale Class Ends Here
+
 
     # Testing the BookExplode Class Begins Here
     book_explosion = BookExplode(book=my_book)
@@ -66,12 +65,12 @@ if __name__ == "__main__":
     # Try detonating again
     book_explosion.detonate()
 
-    print(f"Final Explosion Status: {book_explosion.is_exploded}")
+    print(f"Final Explosion Status: {book_explosion.is_exploded}\n")
     # Testing the BookExplode Class Ends Here
 
 
     # Testing the BookColor Class Begins Here
-    my_book = type('Book', (object,), {'title': "Sample Book"})()  # Creating a mock book object
+    #my_book = type('Book', (object,), {'title': "Sample Book"})()  # Creating a mock book object
     book_color = BookColors(book=my_book)
 
     print("Initial Color Status: " + book_color.__str__())  

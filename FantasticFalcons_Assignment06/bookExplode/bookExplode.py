@@ -1,12 +1,11 @@
-# File Name : bookColor.py
+# File Name : bookExplode.py
 # Student Name: Peyton Bock
 # email:  bockps@mail.uc.edu
 # Assignment Number: Assignment 06
-# Due Date:   2/27/25
-# Course #/Section:   4010-001
-# Semester/Year:   Spring 2025
-# Brief Description of the assignment:  Group project to model a real life senario and how it would be coded. 
-
+# Due Date: 27th Feb, 2025
+# Course #/Section: 4010-001
+# Semester/Year: Spring 2025
+# Brief Description of the assignment: Group project to model a real life senario and how it would be coded. 
 # Brief Description of what this module does. We are modeling real life senerios in Visual Studio
 # Citations: 
 #http://cissandbox.bentley.edu/sandbox/wp-content/uploads/2022-02-10-Documentation-on-f-strings-Updated.pdf
@@ -19,7 +18,7 @@
 class BookExplode:
     def __init__(self, book):
         """
-        Initialize
+        Initialize book explosion object.
         """
         self.book = book
         self.exploded = False

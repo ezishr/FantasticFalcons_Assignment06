@@ -1,4 +1,4 @@
-# File Name: BookColor.py
+# File Name: BookColors.py
 # Student Name: Nogaye Gueye 
 # Group Name: Fantastic Falcons
 # Email: gueyene@mail.uc.edu
@@ -7,16 +7,14 @@
 # Course #/Section: 001
 # Semester/Year: Spring 2025
 # Brief Description of the assignment:  We create a Python project using classes for an object "Book" that holds meaning to us.
-
 # Brief Description of what this module does: We use classes to model an object in the real world while adhering to the Visual Studio 2022 architecture taught in class.
-
 # Anything else that's relevant: N/A
 
 
 class BookColors:
     def __init__(self, book):
         """
-        Initialize the BookColor class with a reference to a Book object.
+        Initialize the BookColor object with a reference to a Book object.
         """
         self.book = book
         self._color = "Unknown" 
