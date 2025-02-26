@@ -15,6 +15,7 @@
 from re import M
 from Book.Book import *
 from bookSale.BookSale import *   
+from bookExplode.bookExplode import *
 
 if __name__ == "__main__":
     # Test with Book class
@@ -47,5 +48,22 @@ if __name__ == "__main__":
 
     # Mark the book as available
     book_sale.mark_as_available()  
+
+     # Testing the BookExplode Class Begins Here
+    book_explosion = BookExplode(book=my_book)
+
+    print(f"Print __str__: {book_explosion.__str__()}")
+    print (f"Print __repr__: {book_explosion.__repr__()}")
+
+    print(f"Initial Explosion Status: {book_explosion.is_exploded}")
+    
+    # Detonate the book
+    book_explosion.detonate()
+
+    # Try detonating again
+    book_explosion.detonate()
+
+    print(f"Final Explosion Status: {book_explosion.is_exploded}")
+    # Testing the BookExplode Class Ends Here
 
     # Testing the BookSale Class Ends Here

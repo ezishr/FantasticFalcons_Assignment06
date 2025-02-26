@@ -21,6 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="bookExplode\bookExplode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="bookExplode\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="bookSale\BookSale.py">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +43,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bookExplode\" />
     <Folder Include="Book\" />
     <Folder Include="mainPackage\" />
     <Folder Include="bookSale\" />
