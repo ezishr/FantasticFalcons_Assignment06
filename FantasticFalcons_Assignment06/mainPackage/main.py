@@ -1,7 +1,7 @@
 # File Name: main.py
-# Student Name: Eirlys Vo, Zulqarnayan Hossain
+# Student Name: Eirlys Vo, Zulqarnayan Hossain, Peyton Bock, Nogaye Gueye
 # Group Name: Fantastic Falcons
-# Email: vopq@mail.uc.edu, hossaizn@mail.uc.edu
+# Email: vopq@mail.uc.edu, hossaizn@mail.uc.edu, bockps@mail.uc.edu, gueyene@mail.uc.edu
 # Assignment Number: Assignment 06
 # Due Date: 27th Feb, 2025
 # Course #/Section: 001
