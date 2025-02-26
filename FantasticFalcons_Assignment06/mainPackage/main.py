@@ -67,3 +67,27 @@ if __name__ == "__main__":
     # Testing the BookExplode Class Ends Here
 
     # Testing the BookSale Class Ends Here
+
+    # Testing the BookColor Class Begins Here
+    my_book = type('Book', (object,), {'title': "Sample Book"})()  # Creating a mock book object
+    book_color = BookColor(book=my_book)
+
+    print("Initial Color Status: " + book_color.__str__())  
+
+    # Checking the Color Status with getter
+    print("Color Status Before Any Changes: " + str(book_color.get_color()))  
+
+    # Setting the Color Status to a valid value
+    book_color.set_color("Red")
+    print("Color Status After Implementing set_color: " + str(book_color.get_color()))  
+
+    # Setting Color Status with an invalid value
+    print("Trying to set Color Status to an Invalid Value in the Following Line:")
+    book_color.set_color(123) # This prints an error message
+
+    # Change the book color
+    book_color.change_color("Blue")   
+
+    # Reset the book color to default
+    book_color.reset_color()
+     # Testing the BookColor Class Ends Here
