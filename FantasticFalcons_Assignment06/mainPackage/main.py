@@ -16,6 +16,7 @@ from re import M
 from Book.Book import *
 from bookSale.BookSale import *   
 from bookExplode.bookExplode import *
+from BookColors.BookColors import *
 
 if __name__ == "__main__":
     # Test with Book class
@@ -49,7 +50,9 @@ if __name__ == "__main__":
     # Mark the book as available
     book_sale.mark_as_available()  
 
-     # Testing the BookExplode Class Begins Here
+    # Testing the BookSale Class Ends Here
+
+    # Testing the BookExplode Class Begins Here
     book_explosion = BookExplode(book=my_book)
 
     print(f"Print __str__: {book_explosion.__str__()}")
@@ -66,11 +69,10 @@ if __name__ == "__main__":
     print(f"Final Explosion Status: {book_explosion.is_exploded}")
     # Testing the BookExplode Class Ends Here
 
-    # Testing the BookSale Class Ends Here
 
     # Testing the BookColor Class Begins Here
     my_book = type('Book', (object,), {'title': "Sample Book"})()  # Creating a mock book object
-    book_color = BookColor(book=my_book)
+    book_color = BookColors(book=my_book)
 
     print("Initial Color Status: " + book_color.__str__())  
 
@@ -90,4 +92,4 @@ if __name__ == "__main__":
 
     # Reset the book color to default
     book_color.reset_color()
-     # Testing the BookColor Class Ends Here
+    # Testing the BookColor Class Ends Here
